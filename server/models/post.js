@@ -5,10 +5,6 @@ const Schema = mongoose.Schema;
 
 const postSchema = new Schema({
     // Every property in the schema has its own defined properties
-    title:{
-        type: String,
-        required: true
-    },
     text: {
         type: String,
         required: true
