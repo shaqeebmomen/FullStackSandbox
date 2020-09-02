@@ -11,7 +11,7 @@ const port = process.env.PORT || 3000;
 
 
 // connect to mongodb
-const dbURI = 'mongodb+srv://shabeeb:Tw04One>TwiceTheFun@personal.hbvbj.azure.mongodb.net/vue-fullstk?retryWrites=true&w=majority'
+const dbURI = process.env.MONGODB_URL;
 mongoose.connect(dbURI, { useNewUrlParser: true, useUnifiedTopology: true })
     .then((result) => {
         app.listen(port, () => {
