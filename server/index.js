@@ -9,6 +9,7 @@ const postRoutes = require('./routes/api/postRoutes');
 const port = process.env.PORT || 3000;
 
 
+
 // connect to mongodb
 const dbURI = 'mongodb+srv://shabeeb:Tw04One>TwiceTheFun@personal.hbvbj.azure.mongodb.net/vue-fullstk?retryWrites=true&w=majority'
 mongoose.connect(dbURI, { useNewUrlParser: true, useUnifiedTopology: true })
@@ -38,4 +39,4 @@ if (process.env.NODE_ENV === 'production') {
 }
 
 
-
+module.exports = app;
